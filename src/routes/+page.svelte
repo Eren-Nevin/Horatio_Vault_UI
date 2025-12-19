@@ -93,7 +93,7 @@
 		<!-- Header Row -->
 		<div class="flex items-center justify-between mb-4">
 			<div class="flex flex-col">
-				<h1 class="text-xl font-semibold">Horatio Vault</h1>
+				<h1 class="text-xl font-semibold">Horatio Vault (Beta)</h1>
 				<!-- <h1 class="text-xs font-medium">Trading AAVE</h1> -->
 			</div>
 
