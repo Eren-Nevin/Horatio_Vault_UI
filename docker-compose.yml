@@ -1,0 +1,16 @@
+name: "vault_ui"
+
+services:
+  landing_server:
+    build: .
+    container_name: vault_ui_server
+    command: ["node", "-r", "dotenv/config", "build"]
+    network_mode: host
+    ports:
+      - "4002:4002"
+    environment:
+      HOST: 127.0.0.1
+      PORT: 4002
+      HOST_HEADER: X-Forwarded-Host
+      PROTOCOL_HEADER: X-Forwarded-Proto
+      ADDRESS_HEADER: X-Real-IP
